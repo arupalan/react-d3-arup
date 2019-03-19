@@ -26,7 +26,7 @@ export default class RatesCurrencyPicker extends React.Component {
       <div className={s.CurrencyPickerContainer}>
         <p>
           {' '}
-          {isEmpty && 'Please type or pick a base Currency'}{' '}
+          {isEmpty && 'Base Currency'}{' '}
           {!isEmpty && !selectedCurrencyCode && 'This currency is invalid'}{' '}
           {selectedCurrencyCode && `Base Currency ${selectedCurrencyCode}`}{' '}
         </p>{' '}

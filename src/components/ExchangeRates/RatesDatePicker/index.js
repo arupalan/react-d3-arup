@@ -29,7 +29,7 @@ export default class RatesDatePicker extends React.Component {
     return (
       <div className={s.DayPickerContainer}>
         <p>
-          {isEmpty && 'Please type or pick a day'}
+          {isEmpty && 'Type or pick a day'}
           {!isEmpty && !selectedDay && 'This day is invalid'}
           {selectedDay && isDisabled && 'This day is disabled'}
           {selectedDay &&
