@@ -11,11 +11,15 @@ git log --pretty=format:"%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(1
 
 ## 1. yarn install
 
-## 3. yarn start
+## 2. yarn start
 
 EUR/USD Spot Rate MACD Candles Visualisation
 ![Boot](https://github.com/arupalan/react-d3-arup/blob/master/static/macd.gif)
 
-## 2. yarn test
+## 3. yarn test
 
 ![Testing](https://github.com/arupalan/ng-products/blob/master/static/testing.gif)
+
+## 4. yarn coverage
+
+Not so great coverage . But you get the point as you how to use it
