@@ -18,11 +18,10 @@ export default class RatesButton extends React.Component {
     const selectedCurrencyCode = this.props.selectedCurrencyCode;
     console.log('RatesButton', this.props.selectedCurrencyCode);
     return (
-      <div className={s.className}>
+      <div className={s.RatesButton}>
         <button onClick={this.onGetRates}>
           <span>✓</span>
-          {selectedCurrencyCode &&
-            `Get Rates ${selectedCurrencyCode}  PreFetched`}{' '}
+          {selectedCurrencyCode && `Get Rates ${selectedCurrencyCode}`}{' '}
         </button>
       </div>
     );
