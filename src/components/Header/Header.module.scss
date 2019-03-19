@@ -1,0 +1,100 @@
+@import '../../variables.scss';
+
+:root {
+  --brand-color: #61dafb;
+}
+
+.root {
+  background: #373277;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: var(--max-content-width);
+}
+
+.brand {
+  color: lighten(#61dafb, +10%);
+  text-decoration: none;
+  font-size: 1.75em; /* ~28px */
+
+}
+
+.brandTxt {
+  margin-left: 10px;
+}
+
+.banner {
+  text-align: center;
+  img {
+    width: 50%;
+  }
+}
+
+.bannerTitle {
+  margin: 0;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.bannerDesc {
+  padding: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.pullLeft {
+  float: left;
+}
+
+.pullRight {
+  float: right;
+}
+
+.popupHead {
+  background-color: #fff;
+  clear: both;
+  color: #7b7b7b;
+  display: inline-table;
+  font-size: 21px;
+  padding: 7px 10px;
+  width: 100%;
+  font-family: Oswald;
+  & .popupHeadRight {
+    margin: 11px 7px 0;
+  }
+}
+
+.popupHeadLeft img {
+  border: 1px solid #7b7b7b;
+  border-radius: 50%;
+  width: 44px;
+}
+
+.popupHeadRight {
+  & .btnGroup {
+    display: inline-flex;
+    margin: 0 8px 0 0;
+    vertical-align: top !important;
+
+    & .dropdownMenu {
+      border: medium none;
+      min-width: 122px;
+      padding: 0;
+    }
+
+    & .chatHeaderButton {
+      background: transparent none repeat scroll 0 0;
+      border: 1px solid #636364;
+      border-radius: 50%;
+      font-size: 14px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
