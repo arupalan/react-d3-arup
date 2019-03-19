@@ -1,36 +1,39 @@
-import { getspotGBP } from './fxrateservice';
+import { getFxSpot } from './fxrateservice';
 
 it('returns the correct format', () => {
-  return getspotGBP().then(([firstMessage]) => {
-    expect(typeof firstMessage.messageId).toBe('string');
-    expect(typeof firstMessage.userId).toBe('string');
-    expect(typeof firstMessage.fullName).toBe('string');
-    expect(typeof firstMessage.timestamp).toBe('string');
-    expect(typeof firstMessage.email).toBe('string');
-    expect(typeof firstMessage.message).toBe('string');
-    expect(
-      firstMessage.avatar === null || typeof firstMessage === 'string'
-    ).toBeTruthy();
+  return getFxSpot('GBP')
+    .then(r => r.quotes)
+    .then(([firstQuote]) => {
+      expect(typeof firstQuote.base_currency).toBe('string');
+      expect(typeof firstQuote.quote_currency).toBe('string');
+      expect(typeof firstQuote.bid).toBe('string');
+      expect(typeof firstQuote.ask).toBe('string');
+      expect(typeof firstQuote.midpoint).toBe('string');
+      expect(
+        firstQuote.base_currency === 'GBP' || typeof firstMessage === 'string'
+      ).toBeTruthy();
+    });
+});
+
+it('Should have the correct number of Quotes', () => {
+  return getFxSpot('GBP')
+    .then(r => r.quotes)
+    .then(q => {
+      expect.assertions(1);
+      expect(q.length).toEqual(215);
+    });
+});
+
+it('Should have correct endpoint', () => {
+  return getFxSpot('GBP').then(data => {
+    expect.assertions(1);
+    expect(data.meta.endpoint).toEqual('spot');
   });
 });
 
-it('Sorts Messages by timestamp descending', () => {
-  return getspotGBP().then(([firstMessage]) => {
+it('Should pull correct base currency', () => {
+  return getFxSpot('GBP').then(data => {
     expect.assertions(1);
-    expect(firstMessage.timestamp).toEqual('2017-02-27T13:47:25Z');
-  });
-});
-
-it('Correctly builds set by matching Message UserId with Member Id', () => {
-  return getspotGBP().then(data => {
-    expect.assertions(1);
-    expect(data.length).toEqual(100);
-  });
-});
-
-it('Correctly Computes fullName', () => {
-  return getspotGBP().then(([firstMessage]) => {
-    expect.assertions(1);
-    expect(firstMessage.fullName).toEqual('Amanda Baker');
+    expect(data.quotes[0].base_currency).toEqual('GBP');
   });
 });

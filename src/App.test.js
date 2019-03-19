@@ -57,7 +57,7 @@ describe('>>> App --- Mount Renderer REACT COMPONENTS', () => {
   });
 
   test('should have Header', () => {
-    expect(wrapper).toContainMatchingElements(1, '.device');
-    expect(wrapper).toContainMatchingElements(1, '.chat');
+    expect(wrapper).toContainMatchingElements(1, '.boxHeader');
+    expect(wrapper).toContainMatchingElements(1, '.boxBody');
   });
 });

@@ -31,8 +31,11 @@ class ChartComponent extends React.Component {
   render() {
     console.log('this.state.data', this.state.data);
     if (this.state.data == null) {
+      const activePage = {
+        title: 'MACD D3 Data Visualization',
+      };
       return (
-        <Page {...this.state}>
+        <Page {...activePage}>
           <div className={s.loader}>Loading...</div>
         </Page>
       );
