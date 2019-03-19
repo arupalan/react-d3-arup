@@ -43,10 +43,9 @@ class ExchangeRates extends React.Component {
       })
       .catch(exception => {
         console.error('error in Exchange Rate Comp', exception);
-        // to error navigate(this.props.to);
+        // unlikely you will reach here
+        // navigate(this.props.to);
       });
-
-    // navigate(this.props.to);
   };
 
   componentDidMount() {

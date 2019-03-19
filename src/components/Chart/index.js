@@ -24,7 +24,7 @@ class ChartComponent extends React.Component {
       });
     } catch (error) {
       console.log('Chart Component Error', error);
-      navigate('/errorReport/error.message');
+      navigate(`/errorReport/${error}`);
     }
   }
 

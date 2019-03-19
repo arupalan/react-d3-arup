@@ -21,9 +21,9 @@ class ErrorReport extends React.Component {
           <div className={s.main}>
             <h1>404</h1>
             <p>
-              It looks like you're lost...
+              It looks like you're lost... That's a trouble?
               <br />
-              That's a trouble?
+              <strong>{this.props.errordetails}</strong>
             </p>
             <button onClick={this.handleClick}>Go back</button>
           </div>
@@ -45,14 +45,14 @@ class ErrorReport extends React.Component {
             </div>{' '}
             <div className={s.root}>
               <div className={s.container}>
-                <span className={s.text}> ©Your Company </span>{' '}
+                <span className={s.text}> © React D3 Arup </span>{' '}
                 <span className={s.spacer}> · </span>{' '}
                 <Link className={s.link} to="/">
                   Home{' '}
                 </Link>{' '}
                 <span className={s.spacer}> · </span>{' '}
-                <Link className={s.link} to="/admin">
-                  Admin{' '}
+                <Link className={s.link} to="/exchangerates">
+                  Exchange Rates{' '}
                 </Link>{' '}
                 <span className={s.spacer}> · </span>{' '}
                 <Link className={s.link} to="/privacy">
