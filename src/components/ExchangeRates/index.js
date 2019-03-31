@@ -91,7 +91,15 @@ class ExchangeRates extends React.Component {
           </div>
           <div className={s.ratesGrid}>
             <RatesHeader />
-            {(this.state.isLoading && <Skeleton count={10} />) ||
+            {(this.state.isLoading && (
+              <>
+                <span>{<Skeleton count={10} height={30} width={50} />} </span>
+                <span>{<Skeleton count={10} height={30} width={50} />} </span>
+                <span>{<Skeleton count={10} height={30} width={50} />} </span>
+                <span>{<Skeleton count={10} height={30} width={50} />} </span>
+                <span>{<Skeleton count={10} height={30} width={50} />} </span>
+              </>
+            )) ||
               this.state.spotFxRates.quotes.map((q, index) => (
                 <>
                   <span key={index + 20003}>

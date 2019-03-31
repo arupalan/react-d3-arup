@@ -24,7 +24,7 @@ namespace server.api.Controllers
         {
             try
             {
-                var stocks = await _service.GetStocksAsync();
+                List<Stock> stocks = await _service.GetStocksAsync();
                 return Ok(stocks);
             }
             catch (HttpRequestException)

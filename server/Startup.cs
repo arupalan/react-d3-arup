@@ -9,6 +9,7 @@ using Polly;
 using System.Net.Http;
 using System;
 using server.api.service;
+using server.api.api;
 
 namespace TestApi
 {
@@ -28,6 +29,12 @@ namespace TestApi
             services.AddHttpClient();
             services.AddSingleton<AlphaVantageApi>();
             services.AddScoped<IStockDataService, StockDataService>();
+            services.AddScoped<IForexDataService, ForexDataService>();
+            services.AddHttpClient<ForgeHttpClient>(client =>
+            {
+                client.BaseAddress = new Uri("https://forex.1forge.com/");
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

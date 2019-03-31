@@ -30,7 +30,6 @@ namespace server.tests
 
         public StockControllerTest()
         {
-            Console.WriteLine("called ctor");
             Mock<IStockDataService> mock = new Mock<IStockDataService>();
             mock.Setup(service => service.GetStocksAsync()).ReturnsAsync(() => mockResult);
             _service = mock.Object;
