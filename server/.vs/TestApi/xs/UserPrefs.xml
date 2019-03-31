@@ -1,0 +1,65 @@
+﻿<Properties StartupConfiguration="{CE1E4191-AEBD-440B-A621-57869DD2C1DD}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../server.tests/StockDataServiceFake.cs">
+    <Files>
+      <File FileName="../server.api/Helper/DataStore.cs" Line="24" Column="13" />
+      <File FileName="../server.api/service/IStockDataService.cs" Line="13" Column="1" />
+      <File FileName="../server.api/service/StockDataService.cs" Line="10" Column="53" />
+      <File FileName="../server.tests/StockControllerTest.cs" Line="40" Column="9" NotebookId="1" />
+      <File FileName="../server.api/Dto/Candle.cs" Line="2" Column="1" NotebookId="1" />
+      <File FileName="../server.api/Dto/Stock.cs" Line="15" Column="1" NotebookId="1" />
+      <File FileName="../server.api/Controllers/CandleController.cs" Line="17" Column="5" NotebookId="1" />
+      <File FileName="../server.api/Controllers/StockController.cs" Line="23" Column="41" NotebookId="1" />
+      <File FileName="appsettings.json" Line="1" Column="1" NotebookId="1" />
+      <File FileName="appsettings.Development.json" Line="1" Column="1" NotebookId="1" />
+      <File FileName="appsettings.Production.json" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Program.cs" Line="18" Column="1" NotebookId="1" />
+      <File FileName="Startup.cs" Line="38" Column="43" NotebookId="1" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" NotebookId="1" />
+      <File FileName="../server.tests/StockDataServiceFake.cs" Line="1" Column="1" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestApi" expanded="True">
+            <Node name="server.api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Dto" expanded="True" />
+              <Node name="Helper" expanded="True" />
+              <Node name="service" expanded="True" />
+            </Node>
+            <Node name="server.tests" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="StockDataServiceFake.cs" selected="True" />
+            </Node>
+            <Node name="TestApi" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="TestApi" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TestApi" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TestApi PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.server.tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

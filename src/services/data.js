@@ -1,7 +1,7 @@
 // facking the API calls
 
 function randomDelayPromise(data) {
-  const delay = Math.floor(Math.random() * 400) + 100;
+  const delay = Math.floor(Math.random() * 900) + 900;
   return new Promise(resolve => setTimeout(() => resolve(data), delay));
 }
 

@@ -49,6 +49,7 @@ const mouseEdgeAppearance = {
 
 class CandleStickChartWithMACDIndicator extends React.Component {
   render() {
+    console.log('CandleStickChartWithMACDIndicator props', this.props);
     const { type, data: initialData, width, ratio } = this.props;
     const ema26 = ema()
       .id(0)

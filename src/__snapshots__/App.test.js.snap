@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`>>> App --- Shallow Renderer REACT COMPONENTS should match snapshot 1`] = `
+<div>
+  <Header />
+  <Router>
+    <ChartComponent
+      path="/"
+    />
+    <About
+      path="/about"
+    />
+    <ExchangeRates
+      path="/exchangerates"
+    />
+    <ChartComponent
+      path="/chart/:ccypair"
+    />
+    <ErrorReport
+      path="/errorReport/:errordetails"
+    />
+    <NotFound
+      default={true}
+      title="Page Not Found"
+    />
+  </Router>
+  <Footer />
+</div>
+`;
+
+exports[`>>> App --- Snapshot +++capturing Snapshot of App 1`] = `
+<div>
+  <div
+    className="root"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="root"
+        role="navigation"
+      >
+        <a
+          className="link"
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+        <a
+          className="link"
+          href="/exchangerates"
+          onClick={[Function]}
+        >
+          Exchange Rates
+        </a>
+        <span
+          className="spacer"
+        >
+           | 
+        </span>
+        <a
+          className="link"
+          href="/login"
+          onClick={[Function]}
+        >
+          Log in
+        </a>
+        <span
+          className="spacer"
+        >
+          or
+        </span>
+        <a
+          className="link highlight"
+          href="/register"
+          onClick={[Function]}
+        >
+          Sign up
+        </a>
+      </div>
+      <a
+        className="brand"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="React"
+          height="38"
+          src="react-d3-logo.png"
+          srcSet="react-d3-logo.png"
+          width="38"
+        />
+        <span
+          className="brandTxt"
+        >
+          Data visualization in React using React D3
+        </span>
+      </a>
+      <div
+        className="banner"
+      >
+        <img
+          alt="header"
+          src="react-d3-header.png"
+          srcSet="react-d3-header.png"
+        />
+        <p
+          className="bannerDesc"
+        >
+          Complex Data Visualizations made easy
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    role="group"
+    style={
+      Object {
+        "outline": "none",
+      }
+    }
+    tabIndex="-1"
+  >
+    <div
+      className="root"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="boxHeader"
+        >
+          <h3
+            className="boxTitle pr3"
+          >
+            MACD D3 Data Visualization
+          </h3>
+        </div>
+        <div
+          className="boxBody pr6"
+        >
+          <div
+            className="loader"
+          >
+            Loading...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="root"
+  >
+    <div
+      className="container"
+    >
+      <span
+        className="text"
+      >
+        © React D3 Arup
+      </span>
+      <span
+        className="spacer"
+      >
+        ·
+      </span>
+      <a
+        className="link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <span
+        className="spacer"
+      >
+        ·
+      </span>
+      <a
+        className="link"
+        href="/exchangerates"
+        onClick={[Function]}
+      >
+        Exchange Rates
+      </a>
+      <span
+        className="spacer"
+      >
+        ·
+      </span>
+      <a
+        className="link"
+        href="/privacy"
+        onClick={[Function]}
+      >
+        Privacy
+      </a>
+      <span
+        className="spacer"
+      >
+        ·
+      </span>
+      <a
+        className="link"
+        href="/not-found"
+        onClick={[Function]}
+      >
+        Not Found
+      </a>
+    </div>
+  </div>
+</div>
+`;
